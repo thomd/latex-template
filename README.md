@@ -1,6 +1,10 @@
 # LaTeX Starter Template
 
-A simple starter template for $\LaTeX$. Create document section in `.tex/` folder.
+A simple starter template for $\LaTeX$.
+
+Create document section in `.tex/` folder.
+
+When changes are pushed to Github, a `main.pdf` is created via a Github action. Skip this by adding `[skip ci]` to the commit message.
 
 ## Setup
 
