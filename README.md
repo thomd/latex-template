@@ -8,3 +8,10 @@ Install [MacTex](https://www.tug.org/mactex/) for OSX (the package size is about
 brew install --cask mactex
 ```
 
+## Usage
+
+```
+make
+open main.pdf
+make clean
+```
