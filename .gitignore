@@ -1,0 +1,42 @@
+## core latex/pdflatex auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+# image files
+# *.ps
+# *.eps
+# *.pdf
+
+## generated if empty string is given at "Please type another file name for output:"
+*.pdf
+
+## bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync

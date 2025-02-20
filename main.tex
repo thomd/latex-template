@@ -1,0 +1,59 @@
+\documentclass{article}
+% General document formatting
+\usepackage[margin=0.7in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{todonotes}
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm,hyperref,thmtools}
+% for nested proofs
+
+\usepackage{cleveref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[
+    adversary,
+    sets,
+    probability,
+    asymptotics,
+    lambda,
+    oracles,
+    primitives,
+    operators,
+    keys
+]{cryptocode}
+
+\usepackage[backend=bibtex,style=numeric,sorting=none]{biblatex}
+%%% Save space in references
+\AtEveryBibitem{
+  \ifentrytype{misc}{
+    \clearfield{howpublished} % for eprint entries
+  }{}
+  \clearlist{location}
+  \clearname{editor}
+  \clearfield{pages}
+
+  \ifentrytype{inproceedings}{ % Remove a lot for proceedings
+    \clearfield{year}
+    \clearlist{editor}
+    \clearfield{volume}
+    \clearlist{publisher}
+    \clearfield{series}
+    \clearfield{note}
+    \clearfield{url}
+  }{}
+}
+\addbibresource{bib.bib}
+
+\input{tex/macros.tex}
+
+\title{My Title}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\input{tex/section1.tex}
+\input{tex/section2.tex}
+
+\printbibliography
+\end{document}
