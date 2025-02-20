@@ -11,6 +11,7 @@ brew install --cask mactex
 ## Usage
 
 ```
+make prettier
 make
 open main.pdf
 make clean
