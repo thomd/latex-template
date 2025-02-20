@@ -13,6 +13,6 @@ brew install --cask mactex
 ```
 make prettier
 make
-open main.pdf
 make clean
+open main.pdf
 ```
